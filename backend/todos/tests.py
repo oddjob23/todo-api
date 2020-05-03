@@ -14,10 +14,10 @@ class TodoModelTest(TestCase):
         expected_object_name = f'{todo.title}'
         self.assertEqual(expected_object_name, 'This is a test Todo')
 
-    def test_body_content(self):
+    def test_description_content(self):
         todo = Todo.objects.get(id=1)
-        expected_object_body = f'{todo.description}'
-        self.assertEqual(expected_object_body,
+        expected_object_description = f'{todo.description}'
+        self.assertEqual(expected_object_description,
                          'Learning how to use tests in django')
 
     def test_todo_completion(self):
